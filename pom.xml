@@ -13,12 +13,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices-demo</name>
 	<description>Microservices demo project for Spring Boot</description>
+	<modules>
+		<module>twiter-to-kafka-service</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>17</java.version>
 		<spring-boot.version>3.4.1</spring-boot.version>
 		<maven-compiler-plugin.verison>3.13.0</maven-compiler-plugin.verison>
+		<twiter4j.version>4.0.7</twiter4j.version>
+		<lombok.version>1.18.36</lombok.version>
 	</properties>
 
 	<dependencyManagement>
@@ -35,6 +40,20 @@
 				<version>${spring-boot.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream -->
+			<dependency>
+				<groupId>org.twitter4j</groupId>
+				<artifactId>twitter4j-stream</artifactId>
+				<version>${twiter4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
