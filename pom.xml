@@ -15,7 +15,8 @@
 	<description>Microservices demo project for Spring Boot</description>
 	<modules>
 		<module>twiter-to-kafka-service</module>
-	</modules>
+        <module>app-config-data</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -24,10 +25,18 @@
 		<maven-compiler-plugin.verison>3.13.0</maven-compiler-plugin.verison>
 		<twiter4j.version>4.0.7</twiter4j.version>
 		<lombok.version>1.18.36</lombok.version>
+		<app-config-data.version>0.0.1-SNAPSHOT</app-config-data.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+<!--			local-->
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>app-config-data</artifactId>
+				<version>${app-config-data.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
