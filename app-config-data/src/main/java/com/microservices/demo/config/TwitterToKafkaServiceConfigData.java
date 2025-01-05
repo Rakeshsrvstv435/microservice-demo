@@ -1,16 +1,13 @@
-package com.microservices.demo.twitter.to.kafka.service.config;/*
+package com.microservices.demo.config;/*
  *
  * Created By rakeshsrivastav On 04/01/25
  *
  */
 
 import lombok.Data;
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
