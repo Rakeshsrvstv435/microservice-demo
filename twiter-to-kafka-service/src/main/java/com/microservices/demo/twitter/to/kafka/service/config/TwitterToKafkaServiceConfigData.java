@@ -24,5 +24,4 @@ public class TwitterToKafkaServiceConfigData {
     private Long mockSleepMs;
     private Integer mockMinTweetLength;
     private Integer mockMaxTweetLength;
-
 }
